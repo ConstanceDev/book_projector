@@ -1,0 +1,230 @@
+# ============================================================================
+# .gitignore for DiasporaBook - openFrameworks Project
+# ============================================================================
+
+# ----------------------------------------------------------------------------
+# openFrameworks Build Files
+# ----------------------------------------------------------------------------
+
+# Compiled binaries
+bin/
+!bin/data/
+
+# Build directories
+build/
+Build/
+
+# Xcode build files
+*.pbxuser
+*.mode1v3
+*.mode2v3
+*.perspectivev3
+*.xcuserstate
+*.xcworkspace
+!*.xcworkspace/contents.xcworkspacedata
+xcuserdata/
+DerivedData/
+
+# Visual Studio Code files (if using for editing)
+.vscode/
+*.code-workspace
+
+# ----------------------------------------------------------------------------
+# macOS System Files
+# ----------------------------------------------------------------------------
+
+# General
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Icon must end with two \r
+Icon
+
+# Thumbnails
+._*
+
+# Files that might appear in the root of a volume
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# Directories potentially created on remote AFP share
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# ----------------------------------------------------------------------------
+# C++ Specific
+# ----------------------------------------------------------------------------
+
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Fortran module files
+*.mod
+*.smod
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+
+# Executables
+*.exe
+*.out
+*.app
+
+# ----------------------------------------------------------------------------
+# IDE and Editor Files
+# ----------------------------------------------------------------------------
+
+# Xcode
+*.xccheckout
+*.moved-aside
+*.xcuserstate
+*.xcscmblueprint
+
+# CLion
+.idea/
+
+# Qt Creator
+*.pro.user
+*.pro.user.*
+
+# Code::Blocks
+*.cb_temp
+*.layout
+*.depend
+
+# ----------------------------------------------------------------------------
+# Temporary and Cache Files
+# ----------------------------------------------------------------------------
+
+# Temporary files
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+
+# Log files
+*.log
+
+# Cache files
+*.cache
+
+# ----------------------------------------------------------------------------
+# Project Specific - DiasporaBook
+# ----------------------------------------------------------------------------
+
+# Large video files (optional - remove if you want to track them)
+bin/data/*.mp4
+bin/data/*.mov
+bin/data/*.avi
+bin/data/*.mkv
+
+# OCR training data (if any)
+bin/data/tessdata/
+
+# Debug frames (saved by your app)
+debug_frame_*.png
+debug_frame_*.jpg
+
+# Configuration files with sensitive data
+config.txt
+settings.xml
+
+# ----------------------------------------------------------------------------
+# Dependencies and Libraries
+# ----------------------------------------------------------------------------
+
+# Don't track the entire openFrameworks folder if it's in your repo
+# (Usually openFrameworks is installed separately)
+# openFrameworks/
+
+# Don't track addons if they're git submodules
+# addons/
+
+# Package managers
+node_modules/
+npm-debug.log*
+
+# ----------------------------------------------------------------------------
+# Documentation and Media
+# ----------------------------------------------------------------------------
+
+# Large documentation files
+docs/*.pdf
+*.pdf
+
+# High resolution images (if very large)
+*.tiff
+*.bmp
+
+# ----------------------------------------------------------------------------
+# Version Control
+# ----------------------------------------------------------------------------
+
+# Git
+.git/
+.gitmodules
+
+# SVN
+.svn/
+
+# Mercurial
+.hg/
+
+# ----------------------------------------------------------------------------
+# Keep These Files (Whitelist)
+# ----------------------------------------------------------------------------
+
+# Keep essential project files
+!src/
+!bin/data/.gitkeep
+!addons.make
+!config.make
+!Makefile
+!Project.xcconfig
+!openFrameworks-Info.plist
+
+# Keep small asset files
+!bin/data/fonts/
+!bin/data/images/
+!bin/data/sounds/
+
+# Keep documentation
+!README.md
+!LICENSE
+!CHANGELOG.md
+
+# ----------------------------------------------------------------------------
+# Notes
+# ----------------------------------------------------------------------------
+
+# This .gitignore is designed for:
+# - openFrameworks projects
+# - Xcode development on macOS
+# - The DiasporaBook interactive projection system
+#
+# Customize as needed for your specific workflow
